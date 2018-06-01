@@ -10,16 +10,6 @@ const appendAttributes = list =>
 
 // Generate the initial showcase board that every user and guest gets when they first log in
 const createWelcomeBoard = userId => {
-  const list1 = [
-    { text: "### An open source application inspired by Trello" },
-    {
-      text: `![Octocat](https://assets-cdn.github.com/images/modules/logos_page/Octocat.png)
-Check out the [source code on GitHub](https://github.com/yogaboll/react-kanban)
-`,
-      color: "#6df"
-    }
-  ];
-
   const list2 = [
     {
       text: `### Supports GitHub flavored markdown
@@ -89,11 +79,6 @@ Since you are not signed in, your changes will not persist after you leave the w
     title: "Tutorial board",
     color: "blue",
     lists: [
-      {
-        _id: shortid.generate(),
-        title: "Welcome to React Kanban!",
-        cards: appendAttributes(list1)
-      },
       {
         _id: shortid.generate(),
         title: "Features",

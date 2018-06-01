@@ -33,23 +33,8 @@ class LandingPage extends Component {
             &nbsp;
             <h1>React Kanban</h1>
           </div>
-          <p className="landing-page-description">
-            An open source kanban application inspired by Trello. Check out the
-            source code on{" "}
-            <a
-              href="https://github.com/yogaboll/react-kanban"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>.
-          </p>
+          
           <div className="signin-buttons">
-            <div>
-              <a href="/auth/twitter" className="signin-button twitter-button">
-                <FaTwitter className="logo-icon" /> &nbsp;Sign in with Twitter
-              </a>
-            </div>
             <div>
               <a href="/auth/google" className="signin-button google-button">
                 <img
